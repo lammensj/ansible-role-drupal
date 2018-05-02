@@ -92,6 +92,7 @@ Set this to `false` if you don't need to install Drupal (using the `drupal_*` se
     drupal_enable_modules: []
     drupal_account_name: admin
     drupal_account_pass: admin
+    drupal_account_mail: admin@example.com
 
 Settings for installing a Drupal site if `drupal_install_site` is `true`. If you need to pass additional arguments to the `drush site-install` command, you can pass them in as a list to the `drupal_site_install_extra_args` variable.
 

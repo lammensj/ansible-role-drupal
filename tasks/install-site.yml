@@ -35,9 +35,9 @@
   become: no
 
 - name: Update entities, only after installation.
-  command: "{{ drush_path }}" entup -y
+  command: "{{ drush_path }} entup -y"
   args:
-    chdir: "{{ drupal_core_pathh }}"
+    chdir: "{{ drupal_core_path }}"
   when: "'Drupal bootstrap' not in drupal_site_installed.stdout"
 
 - name: Install configured modules with drush.
